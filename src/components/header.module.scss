@@ -1,32 +1,19 @@
-.header {
-    padding: 1rem 0 3rem;
-}
-
-.title {
-    color: black;
-    font-size: 3rem;
-    text-decoration: none;
-}
-
-.nav-list {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-}
-
 .nav-item {
-    color: grey;
-    font-size: .9rem;
-    margin-right: 1.3rem;
-    text-decoration: none;
+    padding: 0 10px;
+    color: #383838 !important;
+    font-size: 24px !important;
 }
 
 .nav-item:hover {
-    color: #2c1616;
-    
+    color: #6d6d6d !important;
+    text-decoration: none;  
 }
 
 .active-nav-item {
-    color: #333333;
-    font-size: 1.6rem;
+    color: #00d8ff !important;
+}
+
+.versionText{
+    font-size: 0.5em;
+    margin: 0 10px;
 }
