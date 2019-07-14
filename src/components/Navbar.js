@@ -9,6 +9,7 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
+      minHeight: '10vh',
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -18,12 +19,13 @@ const useStyles = makeStyles(theme => ({
     },
     appBarStyle: {
       background: 'transparent',
-      boxShadow: 'none'
+      boxShadow: 'none',
     },
     color: {
       color: '#000'
     }
   }));
+
 
 export default function App() {
 
