@@ -10,45 +10,18 @@ import Navbar from '../components/Navbar'
 
 import mainLandingSectionAlphaStyles from "../styles/mainLandingSectionAlpha.module.scss"
 
-const useStyles = makeStyles(theme => ({
-    root: {
-      flexGrow: 1,
-    },
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    title: {
-      flexGrow: 1,
-    },
-    appBarStyle: {
-      background: 'transparent',
-      boxShadow: 'none'
-    },
-    color: {
-      color: '#000'
-    },
-    mainGrid: {
-        minHeight: '100vmin',
-        width: 'auto',
-        bgcolor: 'rgba(255, 0, 0, 0.7)',
-        background:'url(https://res.cloudinary.com/ddsihrmda/image/upload/v1563080797/nature_edit_szwgdl.png)',
-        position: 'relative',
-        webkitBackgroundSize: 'cover',
-        mozBackgroundSize: 'cover',
-        oBackgroundSize: 'cover',
-        backgroundSize: 'cover',
-      }
-  }));
+// const useStyles = makeStyles(theme => ({
+
+// }));
 
 
 export default function App() {
 
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
-    <div>
-        <Container className={classes.mainGrid} maxWidth="xl">
-          <div className={mainLandingSectionAlphaStyles.greyImageOverlay}>
+    <div className={mainLandingSectionAlphaStyles.greyImageOverlay}>
+        <Container maxWidth="xl">
             <Navbar />  
             <Box my={4}>
                 <Typography variant="h4" component="h1" gutterBottom>
@@ -58,7 +31,6 @@ export default function App() {
                 Go to the about page
                 </Link>
             </Box>
-          </div>
         </Container>
     </div>
   );
