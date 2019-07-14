@@ -1,24 +1,19 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  siteMetadata: {
-    title: `Joe Mulick Portolio`,
-    author: `Joe Mulick`
-  },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-top-layout',
     'gatsby-plugin-sass',
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: 'gatsby-plugin-material-ui',
+      // If you want to use styled components you should change the injection order.
       options: {
-        name: 'src',
-        path: `${__dirname}/src/`
-      }
+        // stylesProvider: {
+        //   injectFirst: true,
+        // },
+      },
     },
+    // If you want to use styled components you should add the plugin here.
+    // 'gatsby-plugin-styled-components',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
@@ -34,6 +29,9 @@ module.exports = {
           }
         ]
       }
-    }
-  ]
-}
+    },
+  ],
+  siteMetadata: {
+    title: 'My page',
+  },
+};

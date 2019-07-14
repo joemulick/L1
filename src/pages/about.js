@@ -1,19 +1,34 @@
-import React from "react"
-import { Link } from 'gatsby'
+import React from 'react';
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import MuiLink from '@material-ui/core/Link';
+import ProTip from '../components/ProTip';
+import Link from '../components/Link';
 
-import Head from '../components/head'
-import Layout from '../components/layout'
-
-
-const AboutPage = () => {
-    return (
-        <Layout>
-            <Head title="About" />
-            <h1>About Page Title</h1>
-            <p>About page bio</p>
-            <p>Additional info here <Link to="/contact">Contact Me</Link></p>
-        </Layout>
-    )
+function MadeWithLove() {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {'Built with love by the '}
+      <MuiLink color="inherit" href="https://material-ui.com/">
+        Material-UI
+      </MuiLink>
+      {' team.'}
+    </Typography>
+  );
 }
 
-export default AboutPage
+export default function App() {
+  return (
+    <Container maxWidth="sm">
+      <Box my={4}>
+        <Typography variant="h4" component="h1" gutterBottom>
+          Gatsby v4-beta example
+        </Typography>
+        <Link to="/">Go to the main page</Link>
+        <ProTip />
+        <MadeWithLove />
+      </Box>
+    </Container>
+  );
+}
