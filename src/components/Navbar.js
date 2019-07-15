@@ -1,45 +1,71 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-// import Link from '../components/Link';
-import { makeStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
+import Slide from '@material-ui/core/Slide';
+import { makeStyles } from '@material-ui/core/styles';
+import { shadows } from '@material-ui/system';
+
+function HideOnScroll(props) {
+  const { children, window } = props;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({ target: window ? window() : undefined });
+
+  return (
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+}
+
+HideOnScroll.propTypes = {
+  children: PropTypes.node.isRequired,
+  // Injected by the documentation to work in an iframe.
+  // You won't need it on your project.
+  window: PropTypes.func,
+};
 
 const useStyles = makeStyles(theme => ({
-    root: {
-      flexGrow: 1,
-    },
-    menuButton: {
-      marginRight: theme.spacing(2),
-    },
-    title: {
-      flexGrow: 1,
-    },
-    color: {
-      color: '#000'
-    },
-    headroomStyle: {
-      background: '#828282',
-      boxShadow: '1px 1px 1px rgba(0,0,0,0.25)',
-    }
-  }));
+  navStyle: {
+    boxShadow: '0',
+    color: 'red'
+  },
+}));
 
-
-export default function App(props) {
+export default function HideAppBar(props) {
 
   const classes = useStyles();
 
   return (
-        <div className={classes.root}>
-            <AppBar className={classes.headroomStyle}>
-              <Toolbar className={classes.color}>
-                <Typography variant="h6" className={classes.title}>
-                  News
-                </Typography>
-                <Button color="inherit">Login</Button>
-              </Toolbar>
-            </AppBar>
-        </div>
+    <React.Fragment>
+      <CssBaseline />
+      <HideOnScroll {...props}>
+        <AppBar color="primary">
+          <Toolbar>
+            <Typography variant="h6">Scroll to Hide App Bar</Typography>
+          </Toolbar>
+        </AppBar>
+      </HideOnScroll>
+      <Toolbar />
+      <Container>
+        <Box my={2}>
+          {[...new Array(12)]
+            .map(
+              () => `Cras mattis consectetur purus sit amet fermentum.
+Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
+            )
+            .join('\n')}
+        </Box>
+      </Container>
+    </React.Fragment>
   );
 }

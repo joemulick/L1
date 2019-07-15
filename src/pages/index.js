@@ -32,14 +32,8 @@ export default function App() {
     <div>
 
     <MainLandingSectionAlpha />
-
-    <Headroom
-          onPin={() => console.log('pinned')}
-          onUnpin={() => console.log('unpinned')}
-          className={indexStyles.indexHeadroomStyle}
-    >
-      <Navbar />
-    </Headroom>
+    
+    <Navbar />
 
     <Container maxWidth="xl">
       <Box my={4}>

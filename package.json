@@ -17,7 +17,6 @@
     "node-sass": "^4.12.0",
     "react": "latest",
     "react-dom": "latest",
-    "react-headroom": "^2.2.8",
     "react-helmet": "latest"
   },
   "scripts": {
