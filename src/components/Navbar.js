@@ -9,7 +9,6 @@ import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 import Slide from '@material-ui/core/Slide';
 import { makeStyles } from '@material-ui/core/styles';
-import { shadows } from '@material-ui/system';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -35,13 +34,12 @@ HideOnScroll.propTypes = {
 const useStyles = makeStyles(theme => ({
   navStyle: {
     // backgroundColor: '#c2c2c2',
-    backgroundColor: 'transparent',
+    // backgroundColor: 'transparent',
+    backgroundColor: '#fff',
   },
-  // invisBG: {
-  //   backgroundColor: '#c2c2c2',
-  //   position: 'absolute',
-  //   zIndex: '-3',
-  // }
+  invisBG: {
+
+  }
 }));
 
 export default function HideAppBar(props) {
