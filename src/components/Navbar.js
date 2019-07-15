@@ -34,9 +34,14 @@ HideOnScroll.propTypes = {
 
 const useStyles = makeStyles(theme => ({
   navStyle: {
-    boxShadow: '0',
-    color: 'red'
+    // backgroundColor: '#c2c2c2',
+    backgroundColor: 'transparent',
   },
+  // invisBG: {
+  //   backgroundColor: '#c2c2c2',
+  //   position: 'absolute',
+  //   zIndex: '-3',
+  // }
 }));
 
 export default function HideAppBar(props) {
@@ -47,7 +52,7 @@ export default function HideAppBar(props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar color="primary">
+        <AppBar className={classes.navStyle}>
           <Toolbar>
             <Typography variant="h6">Scroll to Hide App Bar</Typography>
           </Toolbar>

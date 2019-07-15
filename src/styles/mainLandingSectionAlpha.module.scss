@@ -1,8 +1,10 @@
 .greyImageOverlay{
     background: linear-gradient(
-                     rgba(80, 199, 199, .5), 
-                     rgba(80, 199, 199, .5)),
+                     rgba(0, 0, 0, 0.2), 
+                     rgba(0, 0, 0, 0.2)),
                      url(https://res.cloudinary.com/ddsihrmda/image/upload/v1563080797/nature_edit_szwgdl.png);
     min-height: 100vmin;
-    width: 100vw;                
+    width: 100vw;
+    position: relative;
+    z-index: 1;                
 }

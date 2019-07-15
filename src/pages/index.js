@@ -31,12 +31,13 @@ export default function App() {
   return (
     <div>
 
+
     <MainLandingSectionAlpha />
-    
+
     <Navbar />
 
     <Container maxWidth="xl">
-      <Box my={4}>
+      <Box>
         <Typography variant="h4" component="h1" gutterBottom>
           Gatsby v4-beta example
         </Typography>
