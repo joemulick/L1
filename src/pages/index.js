@@ -37,10 +37,6 @@ export default function App() {
     <Container maxWidth="xl">
       <Box>
         <Typography variant="h4" component="h1" gutterBottom>
-          <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ duration: 2 }}
-          />
         </Typography>
         <Link to="/about" color="secondary">
           Go to the about page
