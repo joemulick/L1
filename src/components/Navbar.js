@@ -9,7 +9,6 @@ import Button from '@material-ui/core/Button';
 const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
-      minHeight: '10vh',
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -17,30 +16,30 @@ const useStyles = makeStyles(theme => ({
     title: {
       flexGrow: 1,
     },
-    appBarStyle: {
-      background: 'transparent',
-      boxShadow: 'none',
-    },
     color: {
       color: '#000'
+    },
+    headroomStyle: {
+      background: '#828282',
+      boxShadow: '1px 1px 1px rgba(0,0,0,0.25)',
     }
   }));
 
 
-export default function App() {
+export default function App(props) {
 
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar className={classes.appBarStyle} position="static">
-        <Toolbar className={classes.color}>
-          <Typography variant="h6" className={classes.title}>
-            News
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    </div>
+        <div className={classes.root}>
+            <AppBar className={classes.headroomStyle}>
+              <Toolbar className={classes.color}>
+                <Typography variant="h6" className={classes.title}>
+                  News
+                </Typography>
+                <Button color="inherit">Login</Button>
+              </Toolbar>
+            </AppBar>
+        </div>
   );
 }

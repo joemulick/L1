@@ -6,7 +6,6 @@ import Box from '@material-ui/core/Box';
 // import MuiLink from '@material-ui/core/Link';
 import Link from '../components/Link';
 
-import Navbar from '../components/Navbar'
 
 import mainLandingSectionAlphaStyles from "../styles/mainLandingSectionAlpha.module.scss"
 
@@ -21,8 +20,7 @@ export default function App() {
 
   return (
     <div className={mainLandingSectionAlphaStyles.greyImageOverlay}>
-        <Container maxWidth="xl">
-            <Navbar />  
+        <Container maxWidth="xl">  
             <Box my={4}>
                 <Typography variant="h4" component="h1" gutterBottom>
                 Gatsby v4-beta example
