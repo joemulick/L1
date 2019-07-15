@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
+    "framer-motion": "^1.2.2",
     "gatsby": "latest",
     "gatsby-link": "^2.2.2",
     "gatsby-plugin-material-ui": "latest",

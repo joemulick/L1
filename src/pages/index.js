@@ -6,12 +6,10 @@ import MuiLink from '@material-ui/core/Link';
 import ProTip from '../components/ProTip';
 import Link from '../components/Link';
 
-//react-headroom
-import Headroom from 'react-headroom';
-
 import Navbar from '../components/Navbar'
 import MainLandingSectionAlpha from '../components/MainLandingSectionAlpha'
 import indexStyles from "../styles/index.module.scss"
+import { motion } from "framer-motion"
 
 
 function MadeWithLove() {
@@ -39,7 +37,10 @@ export default function App() {
     <Container maxWidth="xl">
       <Box>
         <Typography variant="h4" component="h1" gutterBottom>
-          Gatsby v4-beta example
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ duration: 2 }}
+          />
         </Typography>
         <Link to="/about" color="secondary">
           Go to the about page

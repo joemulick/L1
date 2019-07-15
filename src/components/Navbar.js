@@ -9,6 +9,7 @@ import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 import Slide from '@material-ui/core/Slide';
 import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -37,8 +38,15 @@ const useStyles = makeStyles(theme => ({
     // backgroundColor: 'transparent',
     backgroundColor: '#fff',
   },
-  invisBG: {
-
+  logoStyle: {
+    padding: '20px',
+    flexGrow: '1',
+  },
+  logoImageStyle: {
+    padding: '0 10px'
+  },
+  menuItemStyle: {
+    padding: '38px 50px',
   }
 }));
 
@@ -52,23 +60,17 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar className={classes.navStyle}>
           <Toolbar>
-            <Typography variant="h6">Scroll to Hide App Bar</Typography>
+            <img className={classes.logoImageStyle} src={'https://res.cloudinary.com/ddsihrmda/image/upload/v1563164784/choice-ed-logo_id3h1x.png'} alt="Choice Educational Services Logo" />
+            <Typography className={classes.logoStyle} variant="h6">Choice Educational Services</Typography>
+            <Button className={classes.menuItemStyle} color="inherit">Login</Button>
+            <Button className={classes.menuItemStyle} color="inherit">Test1</Button>
+            <Button className={classes.menuItemStyle} color="inherit">Test2</Button>
+            <Button className={classes.menuItemStyle} color="inherit">Test3</Button>
+            <Button className={classes.menuItemStyle} color="inherit">Test4</Button>
           </Toolbar>
         </AppBar>
       </HideOnScroll>
       <Toolbar />
-      <Container>
-        <Box my={2}>
-          {[...new Array(12)]
-            .map(
-              () => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-            )
-            .join('\n')}
-        </Box>
-      </Container>
     </React.Fragment>
   );
 }
