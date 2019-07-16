@@ -7,38 +7,6 @@
     width: 100vw;             
 }
 
-.test {
-    padding: '150px';
+.myAnimation {
+    animation-duration: 10s;
 }
-
-.example {
-    background-color: #FF851B;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    height: 100px;
-    justify-content: center;
-    padding: 10px;
-    text-align: center;
-    width: 100px;
-    
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
-  }
-  
-  .exampleRow {
-    display: flex;
-    flex-shrink: 0;
-    
-    &:not(:first-child) {
-      margin-top: 20px;
-    }
-  }
-  
-  .exampleRows {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-  }
