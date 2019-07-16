@@ -30,7 +30,7 @@ export default function App() {
 
     <MainLandingSectionAlpha />
 
-    {/* <Navbar /> */}
+    <Navbar />
 
     <Container maxWidth="xl">
       <Box>
