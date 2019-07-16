@@ -8,8 +8,6 @@ import Link from '../components/Link';
 
 import Navbar from '../components/Navbar'
 import MainLandingSectionAlpha from '../components/MainLandingSectionAlpha'
-import indexStyles from "../styles/index.module.scss"
-import { motion } from "framer-motion"
 
 
 function MadeWithLove() {
@@ -39,7 +37,7 @@ export default function App() {
         <Typography variant="h4" component="h1" gutterBottom>
         </Typography>
         <Link to="/about" color="secondary">
-          Go to the about page
+          Test
         </Link>
         <ProTip />
         <MadeWithLove />
