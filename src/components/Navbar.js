@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
   },
   menuItemStyle: {
     padding: '38px 50px',
-  }
+  },
 }));
 
 export default function HideAppBar(props) {
