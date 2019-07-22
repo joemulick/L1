@@ -4,8 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
-import indexSectionTwoStyles from "../styles/indexSectionTwo.module.scss"
-import { borderRadius } from '@material-ui/system';
+import indexSectionTwoStyles from "../styles/indexSectionTwoModal.module.scss"
 
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -22,17 +21,17 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
-  // paper: {
-  //   padding: theme.spacing(2),
-  //   textAlign: 'center',
-  //   color: theme.palette.text.secondary,
-  //   minHeight: '325px',
-  //   background: '#fff',
-  //   marginTop: '5vh',
-  //   marginLeft: '5vw',
-  //   marginRight: '5vw',
-  //   borderRadius: '10px'
-  // },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+    minHeight: '325px',
+    background: '#fff',
+    marginTop: '5vh',
+    marginLeft: '5vw',
+    marginRight: '5vw',
+    borderRadius: '10px'
+  },
   lightBulb: {
     verticalAlign: 'middle',
     marginRight: theme.spacing(1),
@@ -70,12 +69,10 @@ export default function FullWidthGrid() {
                     <ScrollAnimation 
                         animateIn='bounceInLeft'
                         animateOut='bounceOutLeft'>
-                        <div className={indexSectionTwoStyles.image}>
-                          <div>
+                        <div className={classes.paper}>
                             <LightBulbIcon className={classes.lightBulb} />
                             <h2 className={classes.cardTitle}>Advise Package</h2>
                             <p className={classes.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
-                          </div>
                         </div>
                     </ScrollAnimation>
                     </Grid>
@@ -84,12 +81,10 @@ export default function FullWidthGrid() {
                         <ScrollAnimation 
                         animateIn='bounceInLeft'
                         animateOut='bounceOutLeft'>
-                        <div className={indexSectionTwoStyles.image}>
-                          <div>
+                        <div className={classes.paper}>
                             <LightBulbIcon className={classes.lightBulb} />
-                            <h2 className={classes.cardTitle}>Advise Package</h2>
-                            <p className={classes.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
-                          </div>
+                            <h2>Transfer Package</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
                         </div>
                         </ScrollAnimation>
                     </Grid> 

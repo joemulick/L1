@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
     "animate.css": "^3.7.2",
     "gatsby": "latest",
     "gatsby-link": "^2.2.2",

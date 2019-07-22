@@ -18,8 +18,9 @@
     background: #fff;
     border-radius: 10px;
 }
+
 .image:after {
-    content:'Here is some text..';
+    content:'Here is some text.. /n Test Test /n Test &#10 newlinetext Here is some text.. /n Test Test /n Test';
     color:#000;
     position:absolute;
     width:100%; height:100%;
@@ -28,6 +29,7 @@
     opacity:0;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    padding: 50px;
 }
 .image:hover:after {
     opacity:1;
