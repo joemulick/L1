@@ -22,17 +22,17 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    minHeight: '325px',
-    background: '#fff',
-    marginTop: '5vh',
-    marginLeft: '5vw',
-    marginRight: '5vw',
-    borderRadius: '10px'
-  },
+  // paper: {
+  //   padding: theme.spacing(2),
+  //   textAlign: 'center',
+  //   color: theme.palette.text.secondary,
+  //   minHeight: '325px',
+  //   background: '#fff',
+  //   marginTop: '5vh',
+  //   marginLeft: '5vw',
+  //   marginRight: '5vw',
+  //   borderRadius: '10px'
+  // },
   lightBulb: {
     verticalAlign: 'middle',
     marginRight: theme.spacing(1),
@@ -70,10 +70,12 @@ export default function FullWidthGrid() {
                     <ScrollAnimation 
                         animateIn='bounceInLeft'
                         animateOut='bounceOutLeft'>
-                        <div className={classes.paper}>
+                        <div className={indexSectionTwoStyles.image}>
+                          <div>
                             <LightBulbIcon className={classes.lightBulb} />
                             <h2 className={classes.cardTitle}>Advise Package</h2>
                             <p className={classes.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+                          </div>
                         </div>
                     </ScrollAnimation>
                     </Grid>
@@ -82,10 +84,12 @@ export default function FullWidthGrid() {
                         <ScrollAnimation 
                         animateIn='bounceInLeft'
                         animateOut='bounceOutLeft'>
-                        <div className={classes.paper}>
+                        <div className={indexSectionTwoStyles.image}>
+                          <div>
                             <LightBulbIcon className={classes.lightBulb} />
-                            <h2>Transfer Package</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+                            <h2 className={classes.cardTitle}>Advise Package</h2>
+                            <p className={classes.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+                          </div>
                         </div>
                         </ScrollAnimation>
                     </Grid> 
