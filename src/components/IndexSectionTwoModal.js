@@ -30,9 +30,7 @@ const styles = {
     textAlign: 'center',
     minHeight: '325px',
     background: '#fff',
-    marginTop: '5vh',
-    marginLeft: '5vw',
-    marginRight: '5vw',
+    margin: '5vh 5vw',
     borderRadius: '10px'
   },
   lightBulb: {

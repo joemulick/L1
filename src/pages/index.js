@@ -2,8 +2,9 @@ import React from 'react';
 
 import Navbar from '../components/Navbar'
 import MainLandingSectionAlpha from '../components/MainLandingSectionAlpha'
-import IndexSectionTwoHover from '../components/IndexSectionTwoHover'
+// import IndexSectionTwoHover from '../components/IndexSectionTwoHover'
 import IndexSectionTwoModal from '../components/IndexSectionTwoModal'
+import IndexSectionThreeExpPanel from '../components/IndexSectionThreeExpPanel'
 
 export default function App() {
 
@@ -16,7 +17,11 @@ export default function App() {
 
     <IndexSectionTwoModal />
 
-    <IndexSectionTwoHover />
+    {/* <IndexSectionTwoHover /> */}
+
+    <IndexSectionThreeExpPanel />
+
+
 
     </div>
   );
