@@ -70,11 +70,16 @@ export default function FullWidthGrid() {
                     <ScrollAnimation 
                         animateIn='bounceInLeft'
                         animateOut='bounceOutLeft'>
-                        <div className={indexSectionTwoStyles.image}>
-                          <div>
+                        <div className={indexSectionTwoStyles.item}>
+                          <div className={indexSectionTwoStyles.align}>
                             <LightBulbIcon className={classes.lightBulb} />
                             <h2 className={classes.cardTitle}>Advise Package</h2>
                             <p className={classes.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+                          </div>
+                          <div className={indexSectionTwoStyles.addLabel}>
+                            <LightBulbIcon className={classes.lightBulb} />
+                            <h2 className={classes.cardTitle}>ALTERNATE CONTENT</h2>
+                            <p className={classes.cardText}>ALTERNATE CONTENTALTERNATE CONTENTALTERNATE CONTENTALTERNATE CONTENTALTERNATE CONTENTALTERNATE CONTENT</p>
                           </div>
                         </div>
                     </ScrollAnimation>
@@ -84,11 +89,16 @@ export default function FullWidthGrid() {
                         <ScrollAnimation 
                         animateIn='bounceInLeft'
                         animateOut='bounceOutLeft'>
-                        <div className={indexSectionTwoStyles.image}>
-                          <div>
+                        <div className={indexSectionTwoStyles.item}>
+                          <div className={indexSectionTwoStyles.align}>
                             <LightBulbIcon className={classes.lightBulb} />
                             <h2 className={classes.cardTitle}>Advise Package</h2>
                             <p className={classes.cardText}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+                          </div>
+                          <div className={indexSectionTwoStyles.addLabel}>
+                            <LightBulbIcon className={classes.lightBulb} />
+                            <h2 className={classes.cardTitle}>ALTERNATE CONTENT</h2>
+                            <p className={classes.cardText}>ALTERNATE CONTENTALTERNATE CONTENTALTERNATE CONTENTALTERNATE CONTENTALTERNATE CONTENTALTERNATE CONTENT</p>
                           </div>
                         </div>
                         </ScrollAnimation>
