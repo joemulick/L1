@@ -4,6 +4,8 @@ import MuiExpansionPanel from '@material-ui/core/ExpansionPanel';
 import MuiExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import MuiExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -15,7 +17,7 @@ const useStyles = makeStyles(theme => ({
         width: '100vw'
     },
     contentsContainer: {
-        width: '80%',
+        width: '100%',
         margin: '5vh 5vw',
     },
     titleContainer: {
@@ -78,10 +80,15 @@ export default function CustomizedExpansionPanels() {
 
   return (
     <div className={classes.sectionContainer}>
+      <Container maxWidth="lg">
+        <Grid container spacing={3}>
         <div className={classes.contentsContainer}>
-            <div className={classes.titleContainer}>
-                About
-            </div>
+            <Grid item xs={12}>
+              <div className={classes.titleContainer}>
+                  About
+              </div>
+            </Grid>
+            <Grid item xs={12}>
             <ExpansionPanel square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <ExpansionPanelSummary aria-controls="panel1d-content" id="panel1d-header">
                 <Typography>Collapsible Group Item #1</Typography>
@@ -118,7 +125,10 @@ export default function CustomizedExpansionPanels() {
                 </Typography>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
+            </Grid>
       </div>
+      </Grid>
+      </Container>
     </div>
   );
 }

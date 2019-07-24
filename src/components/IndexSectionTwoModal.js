@@ -23,9 +23,6 @@ function LightBulbIcon(props) {
 }
 
 const styles = {
-  root: {
-    flexGrow: 1,
-  },
   paper: {
     textAlign: 'center',
     minHeight: '325px',
@@ -97,7 +94,6 @@ class IndexSectionTwoModal extends React.Component {
 
     <div className={indexSectionTwoStyles.sectionContainer}>
     <Container maxWidth="lg">
-        <div className={classes.root}>
             <Grid container spacing={3}>
                     <Grid item xs={12}>
                       <h1 className={classes.sectionTitle} >Services</h1>
@@ -140,7 +136,6 @@ class IndexSectionTwoModal extends React.Component {
                         </ScrollAnimation>
                     </Grid> 
             </Grid>
-        </div>
     </Container>
     </div>
     );
