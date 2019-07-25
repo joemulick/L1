@@ -60,11 +60,13 @@ export default function HideAppBar(props) {
             <img className={classes.logoImageStyle} src={'https://res.cloudinary.com/ddsihrmda/image/upload/v1563164784/choice-ed-logo_id3h1x.png'} alt="Choice Educational Services Logo" />
             <Typography className={classes.logoStyle} variant="h6">Choice Educational Services</Typography>
             <Button className={classes.menuItemStyle} color="inherit">Services</Button>
-            <Button className={classes.menuItemStyle} color="inherit">Test1</Button>
-            {/* <Link to="/about"> */}
-              <Button className={classes.menuItemStyle} color="inherit">About
+            <Link to="/testimonials" color="primary">
+              <Button className={classes.menuItemStyle}>Testimonials</Button>
+            </Link>
+            <Link to="/about" color="primary">
+              <Button className={classes.menuItemStyle}>About
               </Button>
-            {/* </Link> */}
+            </Link>
             <Button className={classes.menuItemStyle} color="inherit">Contact</Button>
             <Button className={classes.menuItemStyle} color="inherit">Blog</Button>
           </Toolbar>
