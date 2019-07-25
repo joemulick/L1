@@ -23,7 +23,10 @@ const useStyles = makeStyles(theme => ({
     titleContainer: {
         textAlign: 'center',
         margin: '7vh 0'
-    }
+    },
+    aboutOne: {
+        padding: '100px',
+    } 
     
   
   }));
@@ -94,7 +97,7 @@ export default function CustomizedExpansionPanels() {
                 <Typography>Collapsible Group Item #1</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                <Typography>
+                <Typography className={classes.aboutOne}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
                     sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
