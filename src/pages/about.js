@@ -9,6 +9,7 @@ export default function App() {
 
       <Navbar />
 
+      <div>About Test</div>
 
     </div>
   );

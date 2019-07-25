@@ -8,6 +8,7 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Slide from '@material-ui/core/Slide';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import Link from '../components/Link';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -32,8 +33,6 @@ HideOnScroll.propTypes = {
 
 const useStyles = makeStyles(theme => ({
   navStyle: {
-    // backgroundColor: '#c2c2c2',
-    // backgroundColor: 'transparent',
     backgroundColor: '#fff',
   },
   logoStyle: {
@@ -62,7 +61,10 @@ export default function HideAppBar(props) {
             <Typography className={classes.logoStyle} variant="h6">Choice Educational Services</Typography>
             <Button className={classes.menuItemStyle} color="inherit">Services</Button>
             <Button className={classes.menuItemStyle} color="inherit">Test1</Button>
-            <Button className={classes.menuItemStyle} color="inherit">About</Button>
+            {/* <Link to="/about"> */}
+              <Button className={classes.menuItemStyle} color="inherit">About
+              </Button>
+            {/* </Link> */}
             <Button className={classes.menuItemStyle} color="inherit">Contact</Button>
             <Button className={classes.menuItemStyle} color="inherit">Blog</Button>
           </Toolbar>

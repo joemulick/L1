@@ -4,7 +4,11 @@
                      rgba(0, 0, 0, 0.2)),
                      url(https://res.cloudinary.com/ddsihrmda/image/upload/v1563080797/nature_edit_szwgdl.png);
     min-height: 100vmin;
-    width: 100vw;             
+    width: 100vw;
+    position: relative;
+    -webkit-background-origin: cover;
+    -moz-background-origin: cover;
+    background-size: cover;         
 }
 
 .mainTextDiv{
