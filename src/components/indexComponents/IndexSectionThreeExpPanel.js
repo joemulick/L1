@@ -26,7 +26,18 @@ const useStyles = makeStyles(theme => ({
     },
     aboutOne: {
         padding: '100px',
-    } 
+        
+    },
+    aboutOneContainer: {
+        minHeight: '500px',
+        display: 'flex',
+        alignItems: 'center',
+    },
+    aboutTwoContainer: {
+      minHeight: '500px',
+      display: 'flex',
+      alignItems: 'center',
+    }
     
   
   }));
@@ -97,11 +108,13 @@ export default function CustomizedExpansionPanels() {
                 <Typography>Collapsible Group Item #1</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                <Typography className={classes.aboutOne}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                    sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-                </Typography>
+                  <div className={classes.aboutOneContainer}>
+                  <Typography className={classes.aboutOne}>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                      sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  </Typography>
+                  </div>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
             <ExpansionPanel square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -109,25 +122,27 @@ export default function CustomizedExpansionPanels() {
                 <Typography>Collapsible Group Item #2</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                    sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-                </Typography>
+                  <div className={classes.aboutTwoContainer}>
+                    <Typography className={classes.aboutOne}>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                        sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+                    </Typography>
+                    </div>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
-            <ExpansionPanel square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+            {/* <ExpansionPanel square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                 <ExpansionPanelSummary aria-controls="panel3d-content" id="panel3d-header">
                 <Typography>Collapsible Group Item #3</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-                <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                    sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
-                </Typography>
+                  <Typography>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
+                      sit amet blandit leo lobortis eget. Lorem ipsum dolor sit amet, consectetur adipiscing
+                      elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  </Typography>
                 </ExpansionPanelDetails>
-            </ExpansionPanel>
+            </ExpansionPanel> */}
             </Grid>
       </div>
       </Grid>

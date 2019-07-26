@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Navbar from '../components/Navbar'
+import AboutOne from '../components/aboutComponents/AboutOne'
 
 
 export default function App() {
@@ -9,7 +10,7 @@ export default function App() {
 
       <Navbar />
 
-      <div>About Test</div>
+      <AboutOne />
 
     </div>
   );

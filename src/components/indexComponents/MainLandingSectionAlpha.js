@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import mainLandingSectionAlphaStyles from "../styles/mainLandingSectionAlpha.module.scss"
+import mainLandingSectionAlphaStyles from "../../styles/mainLandingSectionAlpha.module.scss"
 
 
 

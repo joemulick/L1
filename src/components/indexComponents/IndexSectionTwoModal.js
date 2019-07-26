@@ -6,10 +6,10 @@ import Container from '@material-ui/core/Container';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import Button from '@material-ui/core/Button';
 
-import ServiceModalOne from './serviceModals/ServiceModalOne';
-import ServiceModalTwo from './serviceModals/ServiceModalTwo';
+import ServiceModalOne from '../serviceModals/ServiceModalOne';
+import ServiceModalTwo from '../serviceModals/ServiceModalTwo';
 
-import indexSectionTwoStyles from "../styles/indexSectionTwoModal.module.scss"
+import indexSectionTwoStyles from "../../styles/indexSectionTwoModal.module.scss"
 
 import ScrollAnimation from 'react-animate-on-scroll';
 

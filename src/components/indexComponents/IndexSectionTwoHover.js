@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
-import indexSectionTwoStyles from "../styles/indexSectionTwoHover.module.scss"
+import indexSectionTwoStyles from "../../styles/indexSectionTwoHover.module.scss"
 import { borderRadius } from '@material-ui/system';
 
 import ScrollAnimation from 'react-animate-on-scroll';
