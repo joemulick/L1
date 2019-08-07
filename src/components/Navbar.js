@@ -57,8 +57,8 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar className={classes.navStyle}>
           <Toolbar>
-            <img className={classes.logoImageStyle} src={'https://res.cloudinary.com/ddsihrmda/image/upload/v1563164784/choice-ed-logo_id3h1x.png'} alt="Choice Educational Services Logo" />
-            <Typography className={classes.logoStyle} variant="h6">Choice Educational Services</Typography>
+              <img className={classes.logoImageStyle} src={'https://res.cloudinary.com/ddsihrmda/image/upload/v1563164784/choice-ed-logo_id3h1x.png'} alt="Choice Educational Services Logo" />
+              <Typography className={classes.logoStyle} variant="h6">Choice Educational Services</Typography>
             <Button className={classes.menuItemStyle} color="inherit">Services</Button>
             <Link to="/testimonials" color="primary">
               <Button className={classes.menuItemStyle}>Testimonials</Button>
