@@ -9,6 +9,8 @@ import Box from '@material-ui/core/Box';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import Paper from '@material-ui/core/Paper';
 
+
+
 function QuoteIcon(props) {
   return (
     <SvgIcon {...props}>
@@ -98,7 +100,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function NavTabs() {
+export default function TestimonialTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -108,6 +110,7 @@ export default function NavTabs() {
 
   return (
     <div className={classes.root}>
+
       <div className={classes.tabContainer}>
         <AppBar position="static" >
           <Tabs

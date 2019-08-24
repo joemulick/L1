@@ -40,7 +40,8 @@ const useStyles = makeStyles(theme => ({
     flexGrow: '1',
   },
   logoImageStyle: {
-    padding: '0 10px'
+    padding: '0 10px',
+    flexGrow: '1',
   },
   menuItemStyle: {
     padding: '38px 50px',
@@ -57,18 +58,35 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar className={classes.navStyle}>
           <Toolbar>
-              <img className={classes.logoImageStyle} src={'https://res.cloudinary.com/ddsihrmda/image/upload/v1563164784/choice-ed-logo_id3h1x.png'} alt="Choice Educational Services Logo" />
-              <Typography className={classes.logoStyle} variant="h6">Choice Educational Services</Typography>
-            <Button className={classes.menuItemStyle} color="inherit">Services</Button>
-            <Link to="/testimonials" color="primary">
-              <Button className={classes.menuItemStyle}>Testimonials</Button>
-            </Link>
-            <Link to="/about" color="primary">
-              <Button className={classes.menuItemStyle}>About
-              </Button>
-            </Link>
-            <Button className={classes.menuItemStyle} color="inherit">Contact</Button>
-            <Button className={classes.menuItemStyle} color="inherit">Blog</Button>
+
+              <Link to="/" color="primary">
+                <img className={classes.logoImageStyle} src={'https://res.cloudinary.com/ddsihrmda/image/upload/v1563164784/choice-ed-logo_id3h1x.png'} alt="Choice Educational Services Logo" />
+              </Link>
+
+              <Link to="/" color="primary">
+                <Typography className={classes.logoStyle} variant="h6">Choice Educational Services</Typography>
+              </Link>
+
+              <Link to="/services" color="primary">
+                <Button className={classes.menuItemStyle}>Services</Button>
+              </Link>
+
+              <Link to="/testimonials" color="primary">
+                <Button className={classes.menuItemStyle}>Testimonials</Button>
+              </Link>
+
+              <Link to="/about" color="primary">
+                <Button className={classes.menuItemStyle}>About</Button>
+              </Link>
+
+              <Link to="/contact" color="primary">
+                <Button className={classes.menuItemStyle}>Contact</Button>
+              </Link>
+
+              <Link to="/blog" color="primary">
+                <Button className={classes.menuItemStyle}>Blog</Button>
+              </Link>
+
           </Toolbar>
         </AppBar>
       </HideOnScroll>
