@@ -9,6 +9,7 @@ import Slide from '@material-ui/core/Slide';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Link from '../components/Link';
+import { Z_BLOCK } from 'zlib';
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -32,6 +33,9 @@ HideOnScroll.propTypes = {
 };
 
 const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: '1',
+  },
   navStyle: {
     backgroundColor: '#fff',
   },
@@ -41,11 +45,19 @@ const useStyles = makeStyles(theme => ({
   },
   logoImageStyle: {
     padding: '0 10px',
-    flexGrow: '1',
   },
   menuItemStyle: {
     padding: '38px 50px',
   },
+  displayInlineBlock: {
+    display: 'inline-block',
+    verticalAlign: 'middle',
+    paddingLeft: '25px',
+  },
+  leftAlignLogoAndText: {
+    flexGrow: '1',
+  }
+
 }));
 
 export default function HideAppBar(props) {
@@ -56,19 +68,22 @@ export default function HideAppBar(props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
+      <div className={classes.root}>
         <AppBar className={classes.navStyle}>
           <Toolbar>
 
-              <Link to="/" color="primary">
-                <img className={classes.logoImageStyle} src={'https://res.cloudinary.com/ddsihrmda/image/upload/v1563164784/choice-ed-logo_id3h1x.png'} alt="Choice Educational Services Logo" />
+              <Link className={classes.logoImageStyle} to="/" color="primary">
+                <img className={classes.displayInlineBlock} src={'https://res.cloudinary.com/ddsihrmda/image/upload/v1563164784/choice-ed-logo_id3h1x.png'} alt="Choice Educational Services Logo" />
               </Link>
+              <div className={classes.leftAlignLogoAndText}>
+                <Link to="/" color="primary">              
+                  <Typography className={classes.displayInlineBlock} variant="h6">Choice Educational Services</Typography>
+                </Link>
+              </div>
 
-              <Link to="/" color="primary">
-                <Typography className={classes.logoStyle} variant="h6">Choice Educational Services</Typography>
-              </Link>
 
               <Link to="/services" color="primary">
-                <Button className={classes.menuItemStyle}>Services</Button>
+                <Button className={classes.menuItemStyle} >Services</Button>
               </Link>
 
               <Link to="/testimonials" color="primary">
@@ -89,6 +104,7 @@ export default function HideAppBar(props) {
 
           </Toolbar>
         </AppBar>
+      </div>
       </HideOnScroll>
       <Toolbar />
     </React.Fragment>
