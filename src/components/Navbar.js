@@ -9,7 +9,7 @@ import Slide from '@material-ui/core/Slide';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Link from '../components/Link';
-import { Z_BLOCK } from 'zlib';
+
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -31,6 +31,10 @@ HideOnScroll.propTypes = {
   // You won't need it on your project.
   window: PropTypes.func,
 };
+
+const activeStyles = {
+  color: 'red',
+}
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -56,6 +60,10 @@ const useStyles = makeStyles(theme => ({
   },
   leftAlignLogoAndText: {
     flexGrow: '1',
+  },
+  linkDecoration: {
+    textDecoration: 'none',
+    boxShadow: 'none',
   }
 
 }));
@@ -66,6 +74,7 @@ export default function HideAppBar(props) {
 
   return (
     <React.Fragment>
+
       <CssBaseline />
       <HideOnScroll {...props}>
       <div className={classes.root}>
@@ -76,37 +85,35 @@ export default function HideAppBar(props) {
                 <img className={classes.displayInlineBlock} src={'https://res.cloudinary.com/ddsihrmda/image/upload/v1563164784/choice-ed-logo_id3h1x.png'} alt="Choice Educational Services Logo" />
               </Link>
               <div className={classes.leftAlignLogoAndText}>
-                <Link to="/" color="primary">              
+                <Link to="/" color="primary" activeStyles={activeStyles}>              
                   <Typography className={classes.displayInlineBlock} variant="h6">Choice Educational Services</Typography>
                 </Link>
               </div>
 
-
-              <Link to="/services" color="primary">
+              
+              <Link to="/services" className={classes.linkDecoration} color="primary">
                 <Button className={classes.menuItemStyle} >Services</Button>
               </Link>
 
-              <Link to="/testimonials" color="primary">
+              <Link  className={classes.linkDecoration} to="/testimonials" color="primary">
                 <Button className={classes.menuItemStyle}>Testimonials</Button>
               </Link>
 
-              <Link to="/about" color="primary">
+              <Link to="/about" className={classes.linkDecoration} color="primary">
                 <Button className={classes.menuItemStyle}>About</Button>
               </Link>
 
-              <Link to="/contact" color="primary">
+              <Link to="/contact" className={classes.linkDecoration} color="primary">
                 <Button className={classes.menuItemStyle}>Contact</Button>
               </Link>
 
-              <Link to="/blog" color="primary">
+              <Link to="/blog" className={classes.linkDecoration} color="primary">
                 <Button className={classes.menuItemStyle}>Blog</Button>
               </Link>
-
           </Toolbar>
         </AppBar>
       </div>
       </HideOnScroll>
-      <Toolbar />
     </React.Fragment>
   );
 }
