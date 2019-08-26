@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
+import FooterForm from '../components/footerComponents/footerForm'
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: '1',
@@ -34,7 +36,7 @@ export default function HideAppBar(props) {
             spacing={3}
           >
 
-            <Grid item xs>
+            <Grid item xs={4} sm={3}>
               <div className={classes.centerContent}>
                 <h1>Menu</h1>
                 <h4>Home</h4>
@@ -44,15 +46,12 @@ export default function HideAppBar(props) {
                 <h4>Contact</h4>
               </div>
             </Grid>
-            <Grid item xs>
+            <Grid item xs={8} sm={6}>
               <div className={classes.centerContent}>
-                <h1>Contact Us</h1>
-                <h4>12345 Caso Street</h4>
-                <h4>Suite 200</h4>
-                <h4>Thousand Oaks, CA 91360</h4>
+                <FooterForm />
               </div>
             </Grid>
-            <Grid item xs>
+            <Grid item xs={12} sm={3}>
               <div className={classes.centerContent}>
                 <h1>Contact Us</h1>
                 <div>
