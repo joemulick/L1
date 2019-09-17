@@ -32,6 +32,9 @@ HideOnScroll.propTypes = {
   window: PropTypes.func,
 };
 
+const activeStyles = {
+  color: 'red',
+}
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -74,7 +77,7 @@ export default function HideAppBar(props) {
 
       <CssBaseline />
       <HideOnScroll {...props}>
-      <div className={classes.root}>
+
         <AppBar className={classes.navStyle}>
           <Toolbar>
 
@@ -109,7 +112,7 @@ export default function HideAppBar(props) {
               </Link>
           </Toolbar>
         </AppBar>
-      </div>
+
       </HideOnScroll>
     </React.Fragment>
   );
