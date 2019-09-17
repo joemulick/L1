@@ -32,9 +32,6 @@ HideOnScroll.propTypes = {
   window: PropTypes.func,
 };
 
-const activeStyles = {
-  color: 'red',
-}
 
 const useStyles = makeStyles(theme => ({
   root: {
