@@ -1,0 +1,39 @@
+.section_1 {
+    width: 80%;
+    margin: 5vh auto 1vh;
+}
+
+.blogTitleStyle{
+    text-align: center;
+}
+
+.blogPostInfoStyle{
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.blogTextStyle{
+    font-size: 1em;
+}
+
+.authorImageContainer {
+    display: inline-block;
+    margin: 15px;   
+}
+
+.tempSocialIcons{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-color: aquamarine;
+    margin: 2.5px;
+}
+
+.mePhoto{
+    max-width: 65px;
+    border-radius: 50%;
+}
+
+.blogContentContainer{
+    text-align: center;
+}
