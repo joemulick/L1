@@ -15,7 +15,7 @@
     "@material-ui/core": "latest",
     "@material-ui/icons": "latest",
     "animate.css": "^3.7.2",
-    "gatsby": "latest",
+    "gatsby": "^2.5.5",
     "gatsby-link": "^2.2.2",
     "gatsby-plugin-material-ui": "latest",
     "gatsby-plugin-react-helmet": "latest",
@@ -38,9 +38,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/joemulick/L1"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/joemulick/L1/issues"
   }
 }
