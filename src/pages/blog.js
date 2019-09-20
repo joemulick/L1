@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
@@ -25,6 +26,7 @@ const BlogPage = () => {
 
     return (
             <div className={blogStyles.section_1}>
+            <Navbar />
             <Container maxWidth="lg">
                 <Grid container spacing={3}>
                     <div>
