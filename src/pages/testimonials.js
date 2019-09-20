@@ -1,8 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-
-import Navbar from '../components/Navbar'
+import Layout from '../templates/layout'
 import TestimonialsOne from '../components/testimonialComponents/TestimonialsOne'
 
 
@@ -27,13 +25,11 @@ export default function App() {
 
   return (
     <div>
-      
-    <Navbar />
-
-    <div className={classes.testimonialContainer}>
-      <TestimonialsOne />
-    </div>
-
+      <Layout>
+        <div className={classes.testimonialContainer}>
+          <TestimonialsOne />
+        </div>
+      </Layout>
 
     </div>
   );

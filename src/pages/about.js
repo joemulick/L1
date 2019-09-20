@@ -1,17 +1,15 @@
 import React from 'react';
 
-import Navbar from '../components/Navbar'
+import Layout from '../templates/layout'
 import AboutOne from '../components/aboutComponents/AboutOne'
 
 
 export default function App() {
   return (
     <div>
-
-      <Navbar />
-
-      <AboutOne />
-
+      <Layout>
+        <AboutOne />
+      </Layout>
     </div>
   );
 }

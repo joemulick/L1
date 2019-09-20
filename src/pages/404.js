@@ -1,14 +1,18 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import Layout from '../templates/layout'
+
 
 
 const NotFound = () => {
     return (
         <div>
-            <h1>Page Not Found</h1>
-            <p>You have reached this page in ERROR</p>
-            <Link to="/">Head home</Link>
+            <Layout>
+                <h1>Page Not Found</h1>
+                <p>You have reached this page in ERROR</p>
+                <Link to="/">Head home</Link>
+            </Layout>
         </div>
     )
 }
