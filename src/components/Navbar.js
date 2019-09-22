@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: '1',
   },
   navStyle: {
-    backgroundColor: '#fff',
+    backgroundColor: '#E4E0E1',
   },
   logoStyle: {
     padding: '20px',
@@ -52,11 +52,13 @@ const useStyles = makeStyles(theme => ({
   },
   menuItemStyle: {
     padding: '38px 50px',
+    color: '#142128'
   },
   displayInlineBlock: {
     display: 'inline-block',
     verticalAlign: 'middle',
     paddingLeft: '25px',
+    color: '#142128'
   },
   leftAlignLogoAndText: {
     flexGrow: '1',

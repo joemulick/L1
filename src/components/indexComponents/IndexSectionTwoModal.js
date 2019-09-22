@@ -6,6 +6,8 @@ import Container from '@material-ui/core/Container';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import Button from '@material-ui/core/Button';
 
+import ScrollableAnchor from 'react-scrollable-anchor';
+
 import ServiceModalOne from '../serviceModals/ServiceModalOne';
 import ServiceModalTwo from '../serviceModals/ServiceModalTwo';
 
@@ -45,7 +47,9 @@ const styles = {
   },
   sectionTitle: {
     textAlign: 'center',
-    marginTop: '7vh'  
+    marginTop: '10vh',
+    fontFamily: 'Helvetica',
+    fontSize: '3em',
   }
 };
 
@@ -93,10 +97,11 @@ class IndexSectionTwoModal extends React.Component {
     return (
 
     <div className={indexSectionTwoStyles.sectionContainer}>
+    <ScrollableAnchor id={'services'}><span></span></ScrollableAnchor>
     <Container maxWidth="lg">
             <Grid container spacing={3}>
                     <Grid item xs={12}>
-                      <h1 className={classes.sectionTitle} >Services</h1>
+                      <h1 className={classes.sectionTitle} >Core Services</h1>
                     </Grid>
                     <Grid item sm={12} md={6}>
                     <ScrollAnimation 

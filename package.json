@@ -30,7 +30,8 @@
     "react": "latest",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "latest",
-    "react-helmet": "latest"
+    "react-helmet": "latest",
+    "react-scrollable-anchor": "^0.6.1"
   },
   "devDependencies": {
     "env-cmd": "^8.0.2",

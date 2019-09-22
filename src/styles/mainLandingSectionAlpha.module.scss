@@ -1,7 +1,7 @@
 .greyImageOverlay{
     background: linear-gradient(
-                     rgba(0, 0, 0, 0.2), 
-                     rgba(0, 0, 0, 0.2)),
+                     rgba(0, 0, 0, 0.35), 
+                     rgba(0, 0, 0, 0.35)),
                      url(https://res.cloudinary.com/ddsihrmda/image/upload/v1563080797/nature_edit_szwgdl.png);
     min-height: 100vmin;
     width: 100vw;
@@ -13,9 +13,12 @@
 
 .mainTextDiv{
     font-size: 3em;
-    color: #fff;
-    padding-top: 15vh;
+    color: #142128;
+    padding-top: 2vh;
     padding-left: 20vw;
     padding-right: 20vw;
+}
 
+.mainFontStyle{
+    font-family: "Helvetica"
 }

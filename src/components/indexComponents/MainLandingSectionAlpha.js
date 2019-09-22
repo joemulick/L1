@@ -14,7 +14,7 @@ export default function App() {
         <Container maxWidth="xl">  
           <div className={mainLandingSectionAlphaStyles.mainTextDiv}>
             <ScrollAnimation duration="4" animateIn="fadeIn">
-              Empowering students through personalized and expertly guided college and financial aid strategies.
+              <h4 className={mainLandingSectionAlphaStyles.mainFontStyle}>Empowering students through personalized and expertly guided college and financial aid strategies.</h4>
             </ScrollAnimation>
           </div>
         </Container>
