@@ -90,17 +90,16 @@ export default function HideAppBar(props) {
                 </Link>
               </div>
 
-              
+              <Link to="/about" className={classes.linkDecoration} color="primary">
+                <Button className={classes.menuItemStyle}>About</Button>
+              </Link>
+
               <Link to="/services" className={classes.linkDecoration} color="primary">
                 <Button className={classes.menuItemStyle} >Services</Button>
               </Link>
 
-              <Link  className={classes.linkDecoration} to="/testimonials" color="primary">
-                <Button className={classes.menuItemStyle}>Testimonials</Button>
-              </Link>
-
-              <Link to="/about" className={classes.linkDecoration} color="primary">
-                <Button className={classes.menuItemStyle}>About</Button>
+              <Link  className={classes.linkDecoration} to="/resources" color="primary">
+                <Button className={classes.menuItemStyle}>Resources</Button>
               </Link>
 
               <Link to="/contact" className={classes.linkDecoration} color="primary">

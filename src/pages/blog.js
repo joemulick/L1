@@ -4,7 +4,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 
-import blogStyles from './blog.module.scss'
+import blogStyles from '../styles/blog.module.scss'
 
 const BlogPage = () => {
 
