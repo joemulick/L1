@@ -38,4 +38,7 @@ module.exports = {
       }
     }
   ],
+  siteMetadata: {
+    title: 'Lisa - Choice Educational Services',
+  },
 };
