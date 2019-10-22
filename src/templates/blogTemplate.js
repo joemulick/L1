@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-import Layout from "../components/Layout"
 import Head from "../components/head"
 
 import blogTemplateStyles from './blogTemplate.module.scss'
@@ -31,9 +30,8 @@ const Blog = props => {
   }
 
   return (
-    <Layout>
-      <Head title={props.data.contentfulBlogPost.title}/>
         <div className={blogTemplateStyles.section_1}>
+          <Head title={props.data.contentfulBlogPost.title}/>
           <h1 className={blogTemplateStyles.blogTitleStyle}>
             {props.data.contentfulBlogPost.title}
           </h1>
@@ -72,7 +70,6 @@ const Blog = props => {
             {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
           </p>
         </div>
-      </Layout>
   )
 }
 
