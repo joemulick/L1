@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Footer from '../components/footer.js'
-import Navbar from '../components/navbar.js'
+import Footer from '../components/footer'
+import Navbar from '../components/navbar'
 
 import layoutStyles from '../styles/layout.module.scss'
 
