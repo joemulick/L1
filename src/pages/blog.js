@@ -1,9 +1,5 @@
 import React from 'react'
 import Layout from '../components/Layout'
-
-import Footer from '../components/footer'
-import Navbar from '../components/navbar'
-
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
@@ -30,45 +26,43 @@ const BlogPage = () => {
 
     return (
             <div>
-                <Navbar />
-                    <Layout>
-                        <Container maxWidth="lg">
-                            <Grid container spacing={3}>
-                                <div>
-                                    <h1>Blog</h1>
-                                    <ol className={blogStyles.posts}>
-                                        {data.allContentfulBlogPost.edges.map((edge) => {
-                                            return (
-                                                <li className={blogStyles.post}>
-                                                    <Link to={`/blog/${edge.node.slug}`}>
-                                                        <h2>{edge.node.title}</h2>
-                                                        <p>{edge.node.BlogMain}</p>
-                                                    </Link>
-                                                </li>
-                                            )
-                                        })}
-                                    </ol>
-                                </div>
-                                <div sm={4}>
-                                    <div className={blogStyles.listContainer}>
-                                        {data.allContentfulBlogPost.edges.map((edge) => {
-                                            return (
-                                                <Link className={blogStyles.blogURLstyle} to={`/blog/${edge.node.slug}`}>
-                                                    <div className={blogStyles.listGroupStyle}>
-                                                            <p className={blogStyles.listTextStyle}>
-                                                                {edge.node.title}<br />
-                                                                <div className={blogStyles.dateAlign}>{edge.node.BlogList}</div>
-                                                            </p>   
-                                                    </div>
+                <Layout>
+                    <Container maxWidth="lg">
+                        <Grid container spacing={3}>
+                            <div>
+                                <h1>Blog</h1>
+                                <ol className={blogStyles.posts}>
+                                    {data.allContentfulBlogPost.edges.map((edge) => {
+                                        return (
+                                            <li className={blogStyles.post}>
+                                                <Link to={`/blog/${edge.node.slug}`}>
+                                                    <h2>{edge.node.title}</h2>
+                                                    <p>{edge.node.BlogMain}</p>
                                                 </Link>
-                                            )
-                                        })}
-                                    </div>
+                                            </li>
+                                        )
+                                    })}
+                                </ol>
+                            </div>
+                            <div sm={4}>
+                                <div className={blogStyles.listContainer}>
+                                    {data.allContentfulBlogPost.edges.map((edge) => {
+                                        return (
+                                            <Link className={blogStyles.blogURLstyle} to={`/blog/${edge.node.slug}`}>
+                                                <div className={blogStyles.listGroupStyle}>
+                                                        <p className={blogStyles.listTextStyle}>
+                                                            {edge.node.title}<br />
+                                                            <div className={blogStyles.dateAlign}>{edge.node.BlogList}</div>
+                                                        </p>   
+                                                </div>
+                                            </Link>
+                                        )
+                                    })}
                                 </div>
-                            </Grid>
-                        </Container>
-                    </Layout>
-                <Footer />
+                            </div>
+                        </Grid>
+                    </Container>
+                </Layout>
             </div>
             
     )
