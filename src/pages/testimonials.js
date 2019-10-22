@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import TestimonialsOne from '../components/testimonialComponents/TestimonialsOne'
 
 

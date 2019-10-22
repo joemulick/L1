@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 
-import FooterForm from '../components/footerComponents/footerForm'
+import FooterForm from './footerComponents/footerForm'
 
 const useStyles = makeStyles(theme => ({
   root: {
