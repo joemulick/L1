@@ -38,7 +38,4 @@ module.exports = {
       }
     }
   ],
-  siteMetadata: {
-    title: 'My page',
-  },
 };
