@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '../templates/layout'
+import Layout from '../components/Layout'
 import AboutOne from '../components/aboutComponents/AboutOne'
 
 

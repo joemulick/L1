@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../templates/layout'
+import Layout from '../components/Layout'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';

@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Footer from '../components/footer'
-import Navbar from '../components/navbar'
+import Footer from './footer'
+import Navbar from './navbar'
 
-import layoutStyles from './layout.module.scss'
+import layoutStyles from '../styles/layout.module.scss'
 
 
 
