@@ -1,6 +1,10 @@
 import React from 'react'
 
 import Layout from '../components/Layout'
+
+import Footer from '../components/footer'
+import Navbar from '../components/navbar'
+
 import Head from '../components/head'
 import MainLandingSectionAlpha from '../components/indexComponents/MainLandingSectionAlpha'
 import IndexSectionTwoModal from '../components/indexComponents/IndexSectionTwoModal'
@@ -14,10 +18,16 @@ export default function App() {
     <div>
       <Layout>
       <Head title="Home"/>
-        <MainLandingSectionAlpha />
-        <IndexSectionTwoModal />
-        {/* <IndexSectionTwoHover /> */}
-        <IndexSectionThreeExpPanel />
+
+        <Navbar />
+
+          <MainLandingSectionAlpha />
+          <IndexSectionTwoModal />
+          {/* <IndexSectionTwoHover /> */}
+          <IndexSectionThreeExpPanel />
+
+        <Footer />
+
       </Layout>
     </div>
   );
