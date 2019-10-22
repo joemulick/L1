@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import Head from '../components/head'
 import MainLandingSectionAlpha from '../components/indexComponents/MainLandingSectionAlpha'
 import IndexSectionTwoModal from '../components/indexComponents/IndexSectionTwoModal'
